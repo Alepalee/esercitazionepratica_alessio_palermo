@@ -51,7 +51,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width: 996px;
+    max-width: 996px;
 }
 
 .titolofooter{
@@ -97,16 +97,17 @@ h1{
 }
 
 .contenutohero{
-    margin: auto;
     display: grid;
-    grid-template-columns: 2fr 1fr ;
-    width: 996px;
+    grid-template-columns: 2fr 1fr;
+    max-width: 996px;
+    margin: auto;
+    justify-content: space-between;
     align-items: center;
     height: 500px;
 }
 
 .hero .contenutohero img{
-    height: 324px;
+    max-height: 324px;
     object-fit: cover;
 }
 
@@ -134,7 +135,7 @@ h2{
 .container_pagina{
     display: grid;
     margin: auto;
-    width: 996px;
+    max-width: 996px;
     padding-top: 150px;
     padding-bottom: 200px;
     gap: 48px;
@@ -144,7 +145,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 12px;
-    row-gap: 24px;
+    row-gap: 12px;
 }
 
 .container_opere{
@@ -163,7 +164,8 @@ h2{
 }
 
 .card{
-    height: 364px;
+    max-height: 100%;
+    width: 324px;
     border-radius: 15px;
     border: solid 3px black;
 }
@@ -262,6 +264,73 @@ p{
 
 .close:hover {
     color: #7c7c7c;
+}
+
+@media(max-width:1000px){
+
+    .hero .contenutohero img{
+        max-height: 162px;
+        object-fit: cover;
+    }
+
+    .contenutohero{
+        max-width: 564px;
+        height: 300px;
+    }
+
+    h2{
+        font-size: 48px;
+        width: 400px;
+    }
+
+    .container_pagina{
+        max-width: 564px;
+    }
+
+    .container_opere{
+        column-count: 2;
+        column-gap: 12px;
+    }
+
+    .container_card{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .card{
+        height: 220px;
+        width: auto;
+    }
+
+    .card img{
+        height: 190px;
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    h3{
+        display: flex;
+        margin: auto;
+        font-size: 12px;
+        font-weight: 700;
+        width: 80%;
+        height: 26px;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:700px){
+    .container_card{
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .container_pagina{
+        max-width: 420px;
+    }
 }
 
 
