@@ -108,8 +108,6 @@ h1{
 .fotoartista img{
     border-radius: 15px;
     border: solid 3px black;
-    width: 200px;
-    height: 200px;
     object-fit: cover;
 }
 
