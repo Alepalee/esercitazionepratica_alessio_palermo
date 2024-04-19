@@ -28,7 +28,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
     margin: 24px;
 }
 
@@ -37,7 +36,6 @@ footer{
     align-items: center;
     border-top: solid 3px;
     width: 100%;
-    
     background-color: rgb(255, 255, 255);
 }
 
@@ -45,11 +43,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
-    margin-top: 64px;
-    margin-bottom: 64px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 996px;
+    margin: auto;
+    padding: 48px;
 }
 
 .titolofooter{
@@ -300,10 +296,6 @@ p{
         font-size: 16px;
     }
 
-    .container_footer{
-        width: 564px;
-    }
-
     .testo{
         gap: 24px
     }
@@ -311,6 +303,15 @@ p{
     svg{
         height: 162px;
         width: 162px;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .container_footer{
+        width: 564px;
     }
 
 }
@@ -322,16 +323,15 @@ p{
         grid-template-columns: 1fr;
     }
 
+    .container_footer{
+        width: 400px;
+    }
+
     .container_pagina{
         max-width: 400px;
         padding: 24px;
         padding-top: 86px;
         padding-bottom: 86px;
-    }
-
-
-    .container_footer{
-        max-width: 300px;
     }
 
     ul{
