@@ -16,16 +16,12 @@ img {
     margin: 0;
 }
 
-
-
 header{
     display: grid;
-    position: fixed;
     align-items: center;
     border-bottom: solid 3px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    z-index: 1;
 }
 
 .container_header{
@@ -39,17 +35,18 @@ header{
 footer{
     display: grid;
     align-items: center;
-    height: 160px;
     border-top: solid 3px;
+    width: 100%;
+    
+    background-color: rgb(255, 255, 255);
 }
 
 .container_footer{
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width: 996px;
+    margin: 64px;
 }
 
 .titolofooter{
@@ -91,7 +88,6 @@ h1{
 
 .hero{
     border-bottom: solid 3px;
-    padding-top: 80px;
 }
 
 .contenutohero{
@@ -99,7 +95,6 @@ h1{
     grid-template-columns: 2fr 1fr;
     max-width: 996px;
     margin: auto;
-    justify-content: space-between;
     align-items: center;
     height: 500px;
 }
@@ -121,7 +116,6 @@ h2{
     font-size: 72px;
     line-height: 110%;
     font-weight: 900;
-    width: 600px;
 }
 
 .container_pagina{
@@ -279,11 +273,12 @@ p{
     .contenutohero{
         max-width: 564px;
         height: 300px;
+        gap: 24px;
     }
 
     h2{
         font-size: 48px;
-        width: 400px;
+        max-width: 400px;
     }
 
     .container_pagina{
@@ -333,17 +328,9 @@ p{
         padding-bottom: 86px;
     }
 
-    .container_header{
-        margin-top: 32px;
-        max-width: 400px;
-    }
 
     .container_footer{
-        max-width: 400px;
-    }
-
-    .hero{
-        padding-top: 120px;
+        max-width: 300px;
     }
 
     ul{
@@ -369,22 +356,21 @@ p{
 
     .contenutohero{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: auto;
-        height: 220px;
-        padding-top: 40px;
         padding: 24px;
     }
 
     .contenutohero img{
-        grid-row: 1;
+        height: 100%;
+        width: 120px ;
         margin: 0;
     }
 
     .contenutohero h2{
         display: flex;
         align-items: center;
-        font-size: 36px;
+        font-size: 32px;
         justify-content: center
     }
     
@@ -392,6 +378,22 @@ p{
         display: flex;
         flex-direction: column;
     }
+
+    .infohero p{
+        font-size: 12px;
+    }
+
+    .infohero{
+        display: flex;
+        gap: 24px;
+    }
+
+    .testohero{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
 }
 
 
