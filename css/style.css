@@ -22,7 +22,6 @@ header{
     display: grid;
     position: fixed;
     align-items: center;
-    height: 80px;
     border-bottom: solid 3px;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -34,8 +33,7 @@ header{
     align-items: center;
     justify-content: space-between;
     display: flex;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 24px;
 }
 
 footer{
@@ -51,7 +49,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     display: flex;
-    max-width: 996px;
+    width: 996px;
 }
 
 .titolofooter{
@@ -112,17 +110,11 @@ h1{
 }
 
 .fotoartista{
-    width: 324px;
+    max-width: 324px;
     height: 324px;
     border-radius: 15px;
     border: solid 3px;
     object-fit: cover;
-}
-
-
-.testohero{
-    display: grid;
-    gap: 40px;
 }
 
 h2{
@@ -144,6 +136,7 @@ h2{
 .container_card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     column-gap: 12px;
     row-gap: 12px;
 }
@@ -164,8 +157,11 @@ h2{
 }
 
 .card{
-    max-height: 100%;
-    width: 324px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    max-height: 324px;
+    width: 100%;
     border-radius: 15px;
     border: solid 3px black;
 }
@@ -176,12 +172,19 @@ h2{
 }
 
 .card img{
-    height: 324px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 85%;
     width: 100%;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
     border-bottom: solid 3px black;
     z-index: 2;
+}
+
+.card a:hover{
+    color: white;
 }
 
 h3{
@@ -190,7 +193,7 @@ h3{
     font-size: 16px;
     font-weight: 700;
     width: 80%;
-    height: 36px;
+    height: 15%;
     align-items: center;
 }
 
@@ -294,42 +297,100 @@ p{
 
     .container_card{
         grid-template-columns: 1fr 1fr ;
-    }
-
-    .card{
-        height: 220px;
-        width: auto;
-    }
-
-    .card img{
-        height: 190px;
-        width: 100%;
+        row-gap: 24px;
     }
 
     p{
         font-size: 16px;
     }
 
-    h3{
-        display: flex;
-        margin: auto;
-        font-size: 12px;
-        font-weight: 700;
-        width: 80%;
-        height: 26px;
-        align-items: center;
+    .container_footer{
+        width: 564px;
+    }
+
+    .testo{
+        gap: 24px
+    }
+
+    svg{
+        height: 162px;
+        width: 162px;
     }
 
 }
 
 @media(max-width:700px){
+
     .container_card{
         margin: auto;
         grid-template-columns: 1fr;
     }
 
     .container_pagina{
-        max-width: 420px;
+        max-width: 400px;
+        padding: 24px;
+        padding-top: 86px;
+        padding-bottom: 86px;
+    }
+
+    .container_header{
+        margin-top: 32px;
+        max-width: 400px;
+    }
+
+    .container_footer{
+        max-width: 400px;
+    }
+
+    .hero{
+        padding-top: 120px;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .testo{
+        grid-template-columns: 1fr;
+    }
+
+    h3{
+        display: flex;
+        margin: auto;
+        width: 80%;
+        align-items: center;
+    }
+
+    .container_opere{
+        column-count: 2;
+        column-gap: 12px;
+    }
+
+    .contenutohero{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        height: 220px;
+        padding-top: 40px;
+        padding: 24px;
+    }
+
+    .contenutohero img{
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .contenutohero h2{
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        justify-content: center
+    }
+    
+    .testo{
+        display: flex;
+        flex-direction: column;
     }
 }
 
