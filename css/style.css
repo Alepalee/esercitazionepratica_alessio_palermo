@@ -305,8 +305,8 @@ svg{
     .contenutohero{
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 24px;
-        margin-right: 24px;
+        margin-left: 12px;
+        margin-right: 12px;
         gap: 24px;
     }
 
@@ -352,7 +352,7 @@ svg{
     }
 
     .contenutohero .testohero h2{
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .infohero p{
