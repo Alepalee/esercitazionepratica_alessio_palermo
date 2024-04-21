@@ -87,8 +87,8 @@ h1{
     justify-content: space-between;
     margin: auto;
     align-items: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     padding-left: 32px;
     padding-right: 32px;
 }
@@ -104,7 +104,7 @@ h1{
 
 .fotohero img{
     max-width: 100%;
-    max-height: 200px;
+    max-height: 250px;
     object-fit: contain;
 }
 
@@ -151,6 +151,7 @@ h2{
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 12px;
     row-gap: 12px;
+    
 }
 
 .container_opere{
@@ -169,12 +170,14 @@ h2{
 }
 
 .card{
+
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    max-height: 300px;
+    height: 300px;
     border-radius: 15px;
     border: solid 3px black;
+    justify-content: center;
 }
 
 .card:hover{
@@ -287,13 +290,13 @@ svg{
 }
 
 
-@media(max-width:900px){
+@media(max-width:800px){
     .container_card{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(max-width:600px){
+@media(max-width:550px){
     ul{
         flex-direction: column;
         gap: 6px;
@@ -309,11 +312,13 @@ svg{
         margin-left: 12px;
         margin-right: 12px;
         gap: 24px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .contenutohero img{
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
         object-fit: contain;
     }
 
