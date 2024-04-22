@@ -243,13 +243,19 @@ svg{
 }
 
 .modal-trigger{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     border: solid 3px black;
     border-radius: 15px;
+    filter: brightness(100%);
+    transition: 0.3s;
 }
 
 .modal-trigger:hover{
     filter: brightness(50%);
 }
+
 
 .modal:target {
     display: block;
@@ -288,7 +294,6 @@ svg{
 .close:hover {
     color: #7c7c7c;
 }
-
 
 @media(max-width:800px){
     .container_card{
