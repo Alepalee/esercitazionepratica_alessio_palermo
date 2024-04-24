@@ -239,7 +239,7 @@ svg{
 .modal {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
@@ -305,6 +305,10 @@ svg{
     .container_card{
         grid-template-columns: 1fr 1fr;
     }
+
+    h2{
+        font-size: 6vw;
+    }
 }
 
 @media(max-width:550px){
@@ -369,7 +373,7 @@ svg{
     }
 
     .contenutohero .testohero h2{
-        font-size: 34px;
+        font-size: 38px;
     }
 
     .infohero p{
