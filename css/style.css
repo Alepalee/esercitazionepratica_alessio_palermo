@@ -312,6 +312,7 @@ svg{
 }
 
 @media(max-width:550px){
+
     ul{
         flex-direction: column;
         gap: 6px;
@@ -379,6 +380,8 @@ svg{
     .infohero p{
         font-size: 14px;
     }
+
+
 }
 
 
