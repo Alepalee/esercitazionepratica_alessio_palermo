@@ -394,6 +394,7 @@ svg{
     }
 
     .contenutohero .testohero h2{
+        line-height: 110%;
         font-size: 4vh;
     }
 
