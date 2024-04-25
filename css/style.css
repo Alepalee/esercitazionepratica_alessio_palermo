@@ -379,6 +379,10 @@ svg{
         grid-template-columns: 1fr;
     }
 
+    p{
+        font-size: 14px;
+    }
+
     .container_pagina{
         margin-left: 24px;
         margin-right: 24px;
