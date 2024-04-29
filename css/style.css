@@ -273,6 +273,7 @@ svg{
     height: 100%;
 }
 
+
 @keyframes zoom {
     from {transform: scale(0.1)} 
     to {transform: scale(1)}
