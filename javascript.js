@@ -15,17 +15,12 @@ closeModal.addEventListener("click", function() {
   modal.style.display = "none";
 });
 
+modal.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
 window.addEventListener("click", function(event) {
   if (event.target === modal) {
     modal.style.display = "none";
   }
-});
-
-const hamMenu = document.querySelector(".ham-menu");
-
-const offScreenMenu = document.querySelector(".off-screen-menu");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
 });
