@@ -309,6 +309,14 @@ svg{
     }
 }
 
+@media(max-width:650px){
+    .testo{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 
 @media (max-width:550px) {
 
