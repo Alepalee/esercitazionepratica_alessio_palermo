@@ -60,6 +60,8 @@ a{
 
 header a:hover{
     text-decoration: underline;
+    text-decoration-thickness: 3px ;
+    text-decoration-color: #161616 ;
 }
 
 
@@ -156,7 +158,6 @@ h2{
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 12px;
     row-gap: 12px;
-    
 }
 
 .container_opere{
