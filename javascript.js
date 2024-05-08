@@ -4,7 +4,8 @@ var modalTriggers = document.getElementsByClassName("modal-trigger");
 var closeModal = document.getElementById("closeModal");
 
 for (var i = 0; i < modalTriggers.length; i++) {
-  modalTriggers[i].addEventListener("click", function() {
+  modalTriggers[i].addEventListener("click", function(event) {
+    event.preventDefault();
     var imageURL = this.getAttribute("src");
     modalImage.setAttribute("src", imageURL);
     modal.style.display = "block";
@@ -25,11 +26,4 @@ window.addEventListener("click", function(event) {
   }
 });
 
-for (var i = 0; i < modalTriggers.length; i++) {
-  modalTriggers[i].addEventListener("click", function(event) {
-    event.preventDefault();
-    var imageURL = this.getAttribute("src");
-    modalImage.setAttribute("src", imageURL);
-    modal.style.display = "block";
-  });
-}
+
