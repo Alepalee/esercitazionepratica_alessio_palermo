@@ -24,3 +24,12 @@ window.addEventListener("click", function(event) {
     modal.style.display = "none";
   }
 });
+
+for (var i = 0; i < modalTriggers.length; i++) {
+  modalTriggers[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    var imageURL = this.getAttribute("src");
+    modalImage.setAttribute("src", imageURL);
+    modal.style.display = "block";
+  });
+}
