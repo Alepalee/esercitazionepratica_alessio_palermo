@@ -78,8 +78,18 @@ a{
 
 header a:hover{
     text-decoration: underline;
-    text-decoration-thickness: 3px ;
-    text-decoration-color: #161616 ;
+    text-decoration-thickness: 6px ;
+    text-decoration-color: rgba(255, 217, 0, 1) ;
+    text-underline-offset: -3px;
+    text-decoration-skip-ink: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 6px ;
+    text-decoration-color: rgba(255, 217, 0, 1) ;
+    text-underline-offset: -3px;
+    text-decoration-skip-ink: none;
 }
 
 .titoloheader a{
@@ -152,7 +162,11 @@ h2{
     max-width: 650px;
 }
 
-
+h4{
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 90%;
+}
 
 .testohero p{
     font-size: 18px ;
@@ -195,7 +209,6 @@ h2{
 }
 
 .card{
-
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -208,6 +221,7 @@ h2{
 .card:hover{
     background-color: black;
     color: white;
+    
 }
 
 .card img{
