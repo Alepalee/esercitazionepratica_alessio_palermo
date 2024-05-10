@@ -58,8 +58,7 @@ footer{
     justify-content: space-between;
     margin: auto;
     align-items: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 64px 24px 64px;
 }
 
 ul{
@@ -84,6 +83,15 @@ header a:hover{
 }
 
 footer a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 6px ;
+    text-decoration-color: rgba(255, 217, 0, 1) ;
+    text-underline-offset: -3px;
+    text-decoration-skip-ink: none;
+}
+
+footer .titolofooter:hover{
+    cursor: pointer;
     text-decoration: underline;
     text-decoration-thickness: 6px ;
     text-decoration-color: rgba(255, 217, 0, 1) ;
